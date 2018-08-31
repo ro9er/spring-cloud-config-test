@@ -1,0 +1,16 @@
+server:
+  port: 8282
+spring:
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ro9er/config-repo
+          search-paths: /**
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: admin
